@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Asteroid Miner</title>
+</head>
+<body>
+    <h1 class="title">Asteroid Miner</h1>
+    <div class="game-container">
+        <div class="asteroid-bg"></div>
+        <div class="stars-bg"></div>
+        <div class="stats">
+            <p>Rhodium<br><span class="rhodium"></span></p>
+            <p>Palladium<br><span class="palladium"></span></p>
+            <p>Unobtainium<br><span class="unobtainium"></span></p>
+            <span class="palladium"></span>
+            <span class="unobtainium"></span>
+        </div>
+        <div class="asteroid-container">
+            <img src="images/spaceMeteors_004.png" alt="asteroid" class="asteroid">
+        </div>
+        <div class="miners">
+            <div id="rhodium-autominer" class="miner-button">
+                Buy Rhodium Autominer<br><span class="rhodium-autominer-cost"></span> Rhodium
+            </div>
+            <div id="palladium-autominer" class="miner-button">
+                Buy Palladium Autominer<br><span class="palladium-autominer-cost"></span> Rhodium
+            </div>
+            <div id="unobtainium-autominer" class="miner-button">
+                Buy Unobtainium Autominer<br><span class="unobtainium-autominer-cost"></span> Palladium
+            </div>
+        </div>
+        <div class="upgrades">
+            <div id="rhodium-upgrade" class="miner-button">
+                Upgrade Rhodium Autominer<br><span class="rhodium-upgrade-cost"></span> Palladium
+            </div>
+            <div id="palladium-upgrade" class="miner-button">
+                Upgrade Palladium Autominers<br><span class="palladium-upgrade-cost"></span> Palladium
+            </div>
+            <div id="unobtainium-upgrade" class="miner-button">
+                Upgrade Unobtainium Autominers<br><span class="unobtainium-upgrade-cost"></span> Palladium
+            </div>
+            <div id="clicker-upgrade" class="miner-button">
+                Upgrade Clicker<br><span class="clicker-upgrade-cost"></span> Rhodium
+            </div>
+            <div id="speed-upgrade" class="miner-button">
+                Upgrade Mining Speed<br><span class="speed-upgrade-cost"></span> Rhodium
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
