@@ -113,7 +113,35 @@ body {
 	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
 	background-color:#6c7c7c;
 }
+
 .miner-button:active {
 	position:relative;
 	top:1px;
+}
+
+.messages {
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;;
+}
+
+.fade-msg {
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation: fadeAnimation 7s forwards;
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 5%;
+    }
+    20% {
+        opacity: 100%;
+    }
+    85% {
+        opacity: 70%;
+    }
+    100% {
+        opacity: 0%;
+    }
 }
