@@ -425,18 +425,18 @@ function updateRhodium(amtChanged) {
 
 function updatePalladium(amtChanged) {
     palladium.amount += amtChanged;
-    palladiumText.innerHTML = palladium.amount;
+    palladiumText.innerHTML = Math.trunc(palladium.amount);
 }
 
 function updateUnobtainium(amtChanged) {
     unobtainium.amount += amtChanged;
-    unobtainiumText.innerHTML = unobtainium.amount;
+    unobtainiumText.innerHTML = Math.trunc(unobtainium.amount);
 }
 
 function runAutominers() {
     updateRhodium(rhodium.automineAmt * rhodium.autominers * rhodium.multiplier);
-    updatePalladium(Math.floor(palladium.automineAmt * palladium.autominers * palladium.multiplier));
-    updateUnobtainium(Math.floor(unobtainium.automineAmt * unobtainium.autominers * unobtainium.multiplier));
+    updatePalladium(palladium.automineAmt * palladium.autominers * palladium.multiplier);
+    updateUnobtainium(unobtainium.automineAmt * unobtainium.autominers * unobtainium.multiplier);
 }
 
 function displayMessage(message) {
